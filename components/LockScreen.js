@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { ref, set } from 'firebase/database';
-import { db, auth, rtdb } from '../firebaseconfig'; // Importa rtdb
+import { db, auth, rtdb } from '../firebaseconfig';
 
 const LockScreen = () => {
   const [isUnlocked, setIsUnlocked] = useState(false);
